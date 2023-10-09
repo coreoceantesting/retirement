@@ -27,8 +27,8 @@ Profile
                         <tr>
                         <th>#</th>
                         <th>Name</th>
-                        <th>Email</th>
-                        <!-- <th>Mobile No</th> -->
+                        <!-- <th>Email</th> -->
+                        <th>Mobile No</th>
                         <th>Action</th>
                         </tr>
                     </thead>
@@ -37,8 +37,8 @@ Profile
                         <tr>
                             <td>{{ $detail->id }}</td>
                             <td>{{ $detail->first_name .'-'.$detail->last_name }}</td>
-                            <td>{{ $detail->email }}</td>
-                            <!-- <td>{{ $detail->mobile_no  }}</td> -->
+                            <!-- <td>{{ $detail->email }}</td> -->
+                            <td>{{ $detail->mobile_no  }}</td>
                             <td>
                                 {{-- <button class="btn btn-sm btn-info" > <i class="fa fa-eye"></i> View</button> --}}
                                 <a href="{{route('personaldetail.edit',$detail->id)}}" class="btn btn-sm btn-warning" > <i class="fa fa-edit"></i> Edit</a>
